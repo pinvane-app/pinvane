@@ -6,12 +6,10 @@
 
 ## 문제 알리기
 
-*출시 준비 중: 명령줄 · MCP 는 구현됐고, 화면 메뉴(**도움말 → 문제 알리기…**)는 준비 중입니다.*
-
-1. 보고서 만들기: `pinvane report-bug --steps "내가 한 일" --out report.txt` (AI 앱은 `make_bug_report` 를 부를 수 있음).
-2. Pinvane이 짧은 보고서를 씁니다: Pinvane 판 · Windows 판 · 오류 번호와 횟수 · 사용자가 적는 재현 순서. Pinvane이 쓰는 부분에는 도면 · 파일 이름 · 폴더 경로 · 부품 이름 · 키를 넣지 않습니다.
+1. 보고서 만들기: Pinvane 의 **도움말 → 문제 알리기…**, 또는 `pinvane report-bug --steps "내가 한 일" --out report.txt` (AI 앱은 `make_bug_report` 를 부를 수 있음).
+2. Pinvane이 정해 둔 항목으로 짧은 보고서를 씁니다: Pinvane 판 · Windows 판 · 오류 번호와 모듈 · 줄 · 횟수, 그리고 사용자가 적는 재현 순서. 도면 · 파일 이름 · 폴더 경로 · 부품 이름 · 키는 그 항목에 없습니다.
 3. 내가 적은 것까지 **보고서 전체를 읽어 보고**, 보내고 싶지 않은 줄은 지웁니다.
-4. 직접 보냅니다: [이슈](https://github.com/pinvane-app/pinvane/issues/new/choose)를 열거나 support@pinvane.com 으로. Pinvane은 지원 서버로 보내지 않습니다. MCP 로 부르면 보고서 글이 부른 AI 앱에 돌아갑니다.
+4. 직접 보냅니다(**복사** · **내 메일로 열기** · 파일 저장): [이슈](https://github.com/pinvane-app/pinvane/issues/new/choose)를 열거나 support@pinvane.com 으로. Pinvane은 지원 서버로 보내지 않습니다. AI 앱이 MCP 로 만들면 보고서 내용이 연결한 AI 앱에도 전달됩니다.
 
 보고서가 없다면: Pinvane 판(`pinvane version`), Windows 판, 한 일, 일어난 일, 오류 문장을 적어 주세요 — 보이고 싶지 않은 이름 · 경로는 지우고.
 
@@ -19,11 +17,11 @@
 
 ## 업데이트 확인
 
-*출시 준비 중: 명령줄은 구현됐고, 화면 메뉴(**도움말 → 업데이트 확인**)와 출시용 공개 키는 준비 중입니다.*
+*출시 준비 중: 업데이트 서명 키는 출시 때 넣습니다 — 그 전에는 모든 확인이 「확인하지 못함」으로 나옵니다.*
 
-- `pinvane update --check` 는 pinvane.com 에서 서명된 공개 업데이트 파일 하나를 받아 **내 컴퓨터에서** 판을 비교합니다. 요청에 앱 판 번호 · 사용권 · 기기 식별자 · 프로젝트를 넣지 않습니다.
-- 모든 웹 요청처럼 웹 호스트는 IP 주소 · 시각 · 요청 경로 같은 접속 정보를 봅니다.
-- Pinvane은 요청할 때만 확인하고(앱 시작 · 일정에 따른 자동 확인 없음), 새 판을 스스로 내려받거나 설치하지 않습니다.
+- Pinvane 의 **도움말 → 업데이트 확인** 또는 `pinvane update --check` 는 pinvane.com 에서 서명된 공개 업데이트 파일 하나를 받아 **내 컴퓨터에서** 판을 비교합니다. 요청에 앱 판 번호 · 사용권 · 기기 식별자 · 프로젝트를 넣지 않습니다.
+- 접속을 처리하는 서버는 IP 주소 · 시각 · 요청 경로를 처리합니다.
+- Pinvane은 요청할 때만 확인합니다(앱 시작 · 일정에 따른 자동 확인 없음). 업데이트 정보만 확인하며, 설치 파일을 자동으로 내려받거나 설치하지 않습니다.
 - 판마다 바뀐 내용: [CHANGELOG.ko.md](../../CHANGELOG.ko.md) · https://pinvane.com/ko/changelog/.
 
 ## 자주 묻는 것

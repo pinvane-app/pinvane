@@ -6,12 +6,10 @@ Help without handing over your drawings. Pinvane has no automatic error reportin
 
 ## Report a problem
 
-*Release preparation: the command line and MCP are implemented; the screen menu (**Help → Report a problem…**) is pending.*
-
-1. Make a report: `pinvane report-bug --steps "what I did" --out report.txt` (an AI app can call `make_bug_report`).
-2. Pinvane writes a short report: the Pinvane and Windows versions, error codes with counts, and the steps you type. The part Pinvane writes leaves out drawings, file names, folder paths, part names and keys.
+1. Make a report: **Help → Report a problem…** in Pinvane, or `pinvane report-bug --steps "what I did" --out report.txt` (an AI app can call `make_bug_report`).
+2. Pinvane writes a short report from a fixed list: the Pinvane and Windows versions, error codes with their module, line and count — plus the steps you type. Drawings, file names, folder paths, part names and keys are not on that list.
 3. **Read the whole report** — including what you typed — and delete anything you do not want to share.
-4. Send it yourself: open an [issue](https://github.com/pinvane-app/pinvane/issues/new/choose) or write to support@pinvane.com. Pinvane sends nothing to a support server. Through MCP, the report text is returned to the AI app that asked for it.
+4. Send it yourself (**Copy**, **Open in my mail** or a saved file): open an [issue](https://github.com/pinvane-app/pinvane/issues/new/choose) or write to support@pinvane.com. Pinvane sends nothing to a support server. When an AI app makes the report through MCP, the report text also goes to that AI app.
 
 No report? Write the Pinvane version (`pinvane version`), your Windows version, what you did, what happened and the error text — remove any names or paths you do not want to share.
 
@@ -19,11 +17,11 @@ No report? Write the Pinvane version (`pinvane version`), your Windows version, 
 
 ## Check for updates
 
-*Release preparation: the command line is implemented; the screen menu (**Help → Check for updates**) and the release public key are pending.*
+*Release preparation: the update signing key is added at release — until then every check says it could not check.*
 
-- `pinvane update --check` fetches one public, signed update file from pinvane.com and compares it with your version **on your computer**. The request carries no app version, licence, device ID or project.
-- Like any web request, the web host sees connection data such as your IP address, the time and the requested path.
-- Pinvane checks only when you ask — never at start-up or on a schedule — and it never downloads or installs a new version by itself.
+- **Help → Check for updates** in Pinvane, or `pinvane update --check`, fetches one public, signed update file from pinvane.com and compares it with your version **on your computer**. The request carries no app version, licence, device ID or project.
+- The server that handles the connection processes your IP address, the time and the requested path.
+- Pinvane checks only when you ask — never at start-up or on a schedule. It only checks update information and never downloads or installs an installer by itself.
 - What changed in each version: [CHANGELOG.md](../../CHANGELOG.md) and https://pinvane.com/changelog/.
 
 ## Common questions

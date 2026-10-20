@@ -31,7 +31,7 @@ The screen opens in English. One button next to **Help** switches it to Korean a
 
 1. [Connect your AI app](ai-apps.md) to Pinvane.
 2. Give the AI your parts list, connection table and notes, and ask it to draw with Pinvane.
-3. The AI's changes arrive as **proposals**. Look at them and press **Accept** (in **History** or the AI tab).
+3. Most of the AI's drawing changes arrive as **proposals**. Look at them and press **Accept** (in **History** or the AI tab). Some steps, such as a new drawing and its first layout, are saved directly — see [Connect your AI app](ai-apps.md#most-ai-edits-are-proposals).
 4. Answer the [check list](check-list-and-outputs.md) and fix the drawing in the editor.
 
 If your parts list and connection table are already CSV files, one command imports both and lays out the diagram — see [Command line → Import a CSV table](command-line.md#import-a-csv-table).

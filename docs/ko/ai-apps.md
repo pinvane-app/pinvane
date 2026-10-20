@@ -10,13 +10,18 @@ Pinvane은 AI가 쓰기 좋게 만든 도구입니다. AI는 Pinvane의 **로컬
 
 - 서버는 `pinvane mcp` 로 켜집니다. 기본으로 AI 앱이 **내 컴퓨터에서** 이것을 켜고 표준 입출력(stdio)으로 이야기합니다. 그 사이에 인터넷의 Pinvane 서버는 없습니다.
 - 고르는 것: `pinvane mcp --http` 는 같은 도구를 `127.0.0.1` 에서만, 토큰과 Origin 검사를 붙여 엽니다.
+- 어느 프로젝트 폴더에서 일할지는 AI 앱이 알려 줍니다. *서버를 내가 고른 폴더로만 제한하는 기능은 출시 준비 중입니다.*
 - **AI 앱은 받은 내용을 그 앱의 설정 · 약관에 따라 자기 서비스로 보낼 수 있습니다.**
 
-### AI의 고치기는 모두 제안입니다
+### AI의 고치기는 대부분 제안입니다
 
-**내가** 받아들이기 전에는 도면이 바뀌지 않습니다. AI가 고치기를 제안하면 Pinvane에 「AI 제안 n건이 왔습니다 — 기록 탭」이 뜹니다. **기록** 탭(또는 AI 탭)에서 미리 보기를 살펴보고 **받아들이기**를 누릅니다. 그 사이 다른 고치기와 충돌하는 제안에는 「받아들이면 안 됩니다」가 붙습니다.
+도면 고치기 — 부품 · 선 놓기 · 잇기 · 고치기 · 옮기기 · 지우기, 자동 정리, 설계 정보, 표제란 · 용지 — 는 **제안**으로 옵니다. AI가 고치기를 제안하면 Pinvane에 「AI 제안 n건이 왔습니다 — 기록 탭」이 뜹니다. **기록** 탭(또는 AI 탭)에서 미리 보기를 살펴보고 **받아들이기**를 누릅니다. 그 사이 다른 고치기와 충돌하는 제안에는 「받아들이면 안 됩니다」가 붙습니다.
 
-AI가 자기 제안을 받아들이게 하려면 **AI 가 명령으로 받아들이기 허용**을 켭니다(또는 `pinvane mcp --allow-accept` 로 서버를 켬). 기본은 꺼짐입니다.
+제안 없이 **바로 저장되는** AI 단계도 있습니다: 새 프로젝트 · 새 도면 만들기, 도면의 첫 자동 배치, 부품 · 커넥터 정의(커넥터 마법사), 내보내기 파일 쓰기.
+
+**AI 가 명령으로 받아들이기 허용**을 켜면(기본은 꺼짐, 또는 `pinvane mcp --allow-accept`) AI가 제안을 직접 받아들일 수도 있습니다.
+
+*출시 준비 중: 받아들이기 앞의 확인을 보강하고 있고, 바로 저장되는 단계 목록은 기능별로 적어 둡니다.*
 
 설계 · 도면 고치기는 **변경 묶음**입니다. 적용 전에 검사하고, 한 번에 되돌립니다(`pinvane undo` 또는 편집기의 되돌리기).
 
@@ -33,12 +38,12 @@ AI가 자기 제안을 받아들이게 하려면 **AI 가 명령으로 받아들
 
 ## 도구가 다루는 것
 
-`pinvane tools` 가 도구 전부를 보여 주고, `pinvane call <도구> …` 는 도구 하나를 같은 인자 · 같은 결과로 명령줄에서 부릅니다. 명령줄과 MCP가 도구 목록 하나를 같이 씁니다.
+아래는 주요 도구입니다. `pinvane tools` 가 도구 전부를 보여 주고, `pinvane call <도구> …` 는 도구 하나를 같은 인자 · 같은 결과로 명령줄에서 부릅니다. 명령줄과 MCP가 도구 목록 하나를 같이 씁니다.
 
 | 묶음 | 도구 |
 |---|---|
 | 프로젝트 · 도면 | `open_project` · `new_project` · `new_drawing` · `build_drawing` · `get_drawing` · `snap_region`(장 보기) |
-| 부품 · 선 | `list_parts` · `add_part` · `define_part` · `define_connector` · `list_definitions` · `connect_wire` · `change_wire` · `move_part` · `remove_items` · `add_splice` · `pair_connectors` · `name_halves` |
+| 부품 · 선 | `list_parts` · `add_part` · `define_part` · `define_connector` · `list_definitions` · `connect_wire` · `change_wire` · `move_part` · `remove_items` · `add_splice` · `set_splice` · `pair_connectors` · `name_halves` |
 | 설계 정보 | `set_function` · `set_check_item` · `set_estop` · `set_design_facts` · `set_part_power` · `set_design_entry` |
 | 검사 | `check_drawing` · `design_checks` · `tidy_drawing` · `compare_versions` |
 | 제안 · 기록 | `propose_changes` · `list_proposals` · `accept_proposal` · `reject_proposal` · `list_history` · `undo_batch` |
@@ -47,7 +52,7 @@ AI가 자기 제안을 받아들이게 하려면 **AI 가 명령으로 받아들
 
 ## AI 창(내 키)
 
-Pinvane에는 **내 API 키**(Anthropic · OpenAI · Google)로 쓰는 내장 AI 창도 있습니다. **기본은 꺼짐**이고, 쓰면 요청과 그 일의 설계 정보가 내가 고른 AI 회사로 갑니다.
+Pinvane에는 **내 API 키**(Anthropic · OpenAI · Google)로 쓰는 내장 AI 창도 있습니다. **기본은 꺼짐**이고, 요청 카드를 확인하면 요청과 그 일의 설계 정보가 내가 고른 AI 회사로 갑니다. 설계 정보는 승인한 범위에서 정해 둔 칸 목록으로만 만듭니다.
 
 ## 좋은 초안을 위한 요령
 
