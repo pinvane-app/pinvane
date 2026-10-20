@@ -1,0 +1,13 @@
+﻿키,이름,형번,자리
+bat,배터리 24 V,24 V 20 Ah LiFePO4 pack — datasheet,차대
+f1,주 퓨즈 30 A,"ANL fuse holder, 30 A fuse",제어함
+k1,주 릴레이,"24 V coil, 30 A NO contact",제어함
+tb1,단자대,"DIN rail terminals, 10 ways (1–4 +24 V, 5–10 0 V)",제어함
+sw1,키 스위치,2-position key switch — part no. unknown,함 앞판
+es1,비상정지,"Mushroom push button, 1 NC contact",함 윗판
+chg,충전구,2-pin charge connector 50 A,함 옆판
+drv,모터 드라이버,"24 V DC brushed motor driver, 20 A",제어함
+m1,주행 모터,24 V DC motor 250 W,차대
+ctl,제어기,"24 V controller board, 8 in / 8 out",제어함
+s1,근접 센서,"PNP 3-wire inductive sensor, M12, fixed cable",차대 앞
+lamp,상태 램프,"24 V LED signal tower, green / red",함 윗판

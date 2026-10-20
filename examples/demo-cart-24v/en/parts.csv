@@ -1,0 +1,13 @@
+﻿key,name,spec,where
+bat,Battery 24 V,24 V 20 Ah LiFePO4 pack — datasheet,Chassis
+f1,Main fuse 30 A,"ANL fuse holder, 30 A fuse",Control box
+k1,Main relay,"24 V coil, 30 A NO contact",Control box
+tb1,Terminal block,"DIN rail terminals, 10 ways (1–4 +24 V, 5–10 0 V)",Control box
+sw1,Key switch,2-position key switch — part no. unknown,Box front
+es1,Emergency stop,"Mushroom push button, 1 NC contact",Box top
+chg,Charge port,2-pin charge connector 50 A,Box side
+drv,Motor driver,"24 V DC brushed motor driver, 20 A",Control box
+m1,Drive motor,24 V DC motor 250 W,Chassis
+ctl,Controller,"24 V controller board, 8 in / 8 out",Control box
+s1,Proximity sensor,"PNP 3-wire inductive sensor, M12, fixed cable",Chassis front
+lamp,Status lamp,"24 V LED signal tower, green / red",Box top

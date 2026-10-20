@@ -1,0 +1,25 @@
+﻿no,group,from,from terminal,to,to terminal,colour,gauge,evidence,note
+W01,1 Main power,Battery 24 V,+,Main fuse 30 A,1,red,6 mm²,datasheet,
+W02,1 Main power,Main fuse 30 A,2,Main relay,13,red,6 mm² estimated,drawing,
+W03,1 Main power,Main relay,14,Terminal block,1,red,6 mm²,drawing,
+W04,1 Main power,Battery 24 V,-,Terminal block,5,black,6 mm²,datasheet,
+W05,2 Charging,Charge port,+,Battery 24 V,+,red,,unknown,gauge not given
+W06,2 Charging,Charge port,-,Battery 24 V,-,black,,unknown,gauge not given
+W07,3 Control,Main fuse 30 A,2,Key switch,1,red,0.75 mm²,drawing,
+W08,3 Control,Key switch,2,Emergency stop,11,red,0.75 mm²,drawing,
+W09,3 Control,Emergency stop,12,Main relay,A1,red,0.75 mm²,drawing,
+W10,3 Control,Main relay,A2,Terminal block,6,black,0.75 mm²,drawing,
+W11,4 Drive,Terminal block,2,Motor driver,V+,red,4 mm²,datasheet,
+W12,4 Drive,Terminal block,7,Motor driver,V-,black,4 mm²,datasheet,
+W13,4 Drive,Motor driver,M+,Drive motor,+,,4 mm²,estimated,colour not given
+W14,4 Drive,Motor driver,M-,Drive motor,-,,4 mm²,estimated,colour not given
+W15,5 Logic power,Terminal block,3,Controller,24V,red,1.0 mm²,drawing,
+W16,5 Logic power,Terminal block,8,Controller,0V,black,1.0 mm²,drawing,
+W17,6 Signals,Controller,OUT3,Motor driver,PWM,white,,unknown,driver input terminal to be checked
+W18,6 Signals,Controller,OUT4,Motor driver,DIR,grey,,unknown,
+W19,7 Sensor,Terminal block,4,Proximity sensor,BN,brown,0.34 mm²,datasheet,fixed sensor cable
+W20,7 Sensor,Proximity sensor,BU,Terminal block,9,blue,0.34 mm²,datasheet,fixed sensor cable
+W21,7 Sensor,Proximity sensor,BK,Controller,IN1,black,0.34 mm²,datasheet,fixed sensor cable
+W22,8 Lamp,Controller,OUT1,Status lamp,GN,green,0.5 mm²,estimated,
+W23,8 Lamp,Controller,OUT2,Status lamp,?,,0.5 mm²,unknown,lamp terminal not given
+W24,8 Lamp,Status lamp,COM,Terminal block,10,black,0.5 mm²,estimated,

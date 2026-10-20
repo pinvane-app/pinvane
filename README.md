@@ -1,0 +1,48 @@
+# Pinvane
+
+**Built for people who have never drawn a wiring diagram — so that, with an AI, they can make one a technician can work from.**
+
+[한국어](README.ko.md) · Website: https://pinvane.com · Contact: support@pinvane.com
+
+That is the goal. Today Pinvane makes a **draft** diagram and work tables, links what is still undecided to a check list, and lets people fix everything by hand. A worker cannot yet work from the tables alone: lengths, terminations, terminal assignment and test criteria still need people (independent review, 2026-10-20).
+
+> **Status: pre-release testing.** Pinvane is not available for download yet. When it is, the installer, its SHA-256 and the release notes will be on the [Releases](https://github.com/pinvane-app/pinvane/releases) page and on https://pinvane.com/download/.
+
+![The Pinvane editor with a fictional demo cart: parts, wires and the check list](docs/images/editor_en_light.webp)
+
+## How it works
+
+1. **Give the AI your material** — a parts list, a connection table and notes.
+2. **The AI draws with Pinvane** — through Pinvane's local MCP server (or the command line), it lays out a draft diagram and work tables. Values your material does not give stay *not set* and become questions on the check list.
+3. **People check and fix** — answer the check list, review the drawing in the editor, then export.
+
+Pinvane is made for AI to use: an AI can draw, change, check and export without clicking through screens, and gets structured answers back. A person can also draw everything by hand without any AI.
+
+## Read the guide
+
+| | |
+|---|---|
+| [Getting started](docs/en/getting-started.md) | What you need, the first project, drawing by hand |
+| [Connect your AI app](docs/en/ai-apps.md) | Local MCP server, proposals you accept, the AI window |
+| [Command line](docs/en/command-line.md) | `new` · `import-table` · `check` · `export` and the demo |
+| [Check list and outputs](docs/en/check-list-and-outputs.md) | How undecided values become questions; what you can export |
+| [Help, updates and problem reports](docs/en/help.md) | FAQ, update check, reporting a problem, contact |
+| [What's new](CHANGELOG.md) | Changes, newest first, and known issues |
+
+A fictional demo project (a 24 V cart: 12 parts, 24 wires) is in [examples/demo-cart-24v](examples/demo-cart-24v).
+
+## Questions and problem reports
+
+- **Public questions and problem reports:** [Issues](https://github.com/pinvane-app/pinvane/issues/new/choose) in this repository.
+- **Private matters** (licence, payment, anything you do not want public): support@pinvane.com.
+- **Security problems:** please report privately — see [SECURITY.md](https://github.com/pinvane-app/.github/blob/main/SECURITY.md). Do not open a public issue.
+
+**Please never attach drawings, project files, customer names or file paths.** We do not need them. If a problem must be shown, make a small sample project with a few parts that shows the same thing.
+
+Pinvane has no automatic error reporting. Pinvane can write a short problem report that you read and send yourself — see [Help](docs/en/help.md#report-a-problem).
+
+## This repository
+
+This repository holds the user guide (English and Korean), release notes, releases and issues. It does not contain Pinvane's source code.
+
+Pinvane is made by GAONJH (가온제이에이치).
