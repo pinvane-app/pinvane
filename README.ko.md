@@ -1,12 +1,19 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/images/logo-for-dark.png">
+    <img src="docs/images/logo-for-light.png" alt="Pinvane" width="320">
+  </picture>
+</p>
+
 # Pinvane(핀베인)
 
 **배선도를 그려 본 적 없는 사람도 AI와 함께, 현장 작업자가 쓸 배선도를 만들 수 있게 — 그것을 위해 만드는 도구입니다.**
 
 [English](README.md) · 홈페이지: https://pinvane.com/ko/ · 문의: support@pinvane.com
 
-이것이 목표입니다. 지금 Pinvane은 부품 목록과 결선표를 도면과 작업표 **초안**으로 옮기고, 미정 · 추정 정보를 확인 목록과 연결하며, 모든 것을 사람이 화면에서 고칠 수 있게 합니다. 작업자가 표만 들고 바로 작업하는 단계는 아직 아닙니다 — 길이 · 끝 처리 · 단자 배정 · 시험 기준은 사람이 확인해야 합니다(독립 검토, 2026-10-20).
+이것이 목표입니다. 지금 Pinvane은 부품 목록과 결선표를 도면과 작업표 **초안**으로 옮기고, 미정 · 추정 정보를 확인 목록과 연결하며, 모든 것을 사람이 화면에서 고칠 수 있게 합니다. 길이 · 접점 · 단자는 여전히 사람이 정해야 합니다: 작업자가 Pinvane의 표로 실제 장비를 배선해 본 시험은 아직 없고, 시험 설계 여섯은 가상입니다([알려진 한계](CHANGELOG.ko.md#알려진-한계와-문제) · [시험 결과](https://pinvane.com/ko/evidence/)).
 
-> **상태: 출시 전 시험 중.** 아직 내려받을 수 없습니다. 출시하면 설치 파일 · SHA-256 · 바뀐 내용이 이 저장소의 [Releases](https://github.com/pinvane-app/pinvane/releases)와 https://pinvane.com/ko/download/ 에 올라옵니다.
+> **Pinvane 1.0.0 출시** — Windows 10 · 11, 64비트. https://pinvane.com/ko/download/ 나 이 저장소의 [Releases](https://github.com/pinvane-app/pinvane/releases/tag/v1.0.0)에서 `Pinvane-1.0.0-setup.exe`를 내려받고, 실행하기 전에 SHA-256을 확인하세요 — [시작하기 → 설치](docs/ko/getting-started.md#설치). 14일 동안 모든 기능을 무료로 써 볼 수 있습니다 — 카드 없이. 요금: https://pinvane.com/ko/pricing/ (이용권은 판매가 열리면 살 수 있습니다).
 
 ![가상 데모 수레를 그린 Pinvane 편집기 — 부품 · 선 · 확인 목록](docs/images/editor_ko_light.webp)
 
@@ -22,7 +29,7 @@ Pinvane은 AI가 쓰기 좋게 만든 도구입니다. AI는 화면을 눌러 �
 
 | | |
 |---|---|
-| [시작하기](docs/ko/getting-started.md) | 필요한 것 · 첫 프로젝트 · 손으로 그리기 |
+| [시작하기](docs/ko/getting-started.md) | 필요한 것 · 설치와 SHA-256 확인 · 첫 프로젝트 · 손으로 그리기 |
 | [AI 앱 연결](docs/ko/ai-apps.md) | 로컬 MCP 서버 · 내가 받아들이는 제안 · AI 창 |
 | [명령줄](docs/ko/command-line.md) | `new` · `import-table` · `check` · `export` 와 데모 |
 | [확인 목록과 내보내기](docs/ko/check-list-and-outputs.md) | 미정 값이 질문이 되는 방식 · 내보낼 수 있는 것 |

@@ -8,7 +8,7 @@ Everything an AI does through MCP can also be done with the `pinvane` command â€
 - `--lang en` or `--lang ko` chooses the language of the messages.
 - `pinvane <command> --help` shows every option.
 
-> The exact way to run `pinvane` after installing (folder and command) will be given at release.
+> This guide does not yet give the folder and command for running `pinvane` after installing.
 
 ## A first drawing from two CSV files
 

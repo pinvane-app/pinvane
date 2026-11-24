@@ -17,9 +17,7 @@ No report? Write the Pinvane version (`pinvane version`), your Windows version, 
 
 ## Check for updates
 
-*Release preparation: the public key for checking update signatures is added at release — until then every check says it could not check.*
-
-- **Help → Check for updates** in Pinvane, or `pinvane update --check`, fetches one public, signed update file from pinvane.com and compares it with your version **on your computer**. The request carries no app version, licence, device ID or project.
+- **Help → Check for updates** in Pinvane, or `pinvane update --check`, fetches one public, signed update file from pinvane.com and compares it with your version **on your computer**. The request carries no app version, license, device ID or project. Pinvane shows the update information only after checking its signature with the public key built into the app.
 - The server that handles the connection processes your IP address, the time and the requested path.
 - Pinvane checks only when you ask — never at start-up or on a schedule. It only checks update information and never downloads or installs an installer by itself.
 - What changed in each version: [CHANGELOG.md](../../CHANGELOG.md) and https://pinvane.com/changelog/.
@@ -36,24 +34,25 @@ AI apps that support local MCP servers, or any AI that can run commands. We test
 Yes. The editor has everything for drawing by hand: parts, wires, bundles, text, title block, paper sizes, checks and exports.
 
 **Does Pinvane send my drawings anywhere?**
-Not during ordinary drawing, editing and exporting. If you use the AI features, your request and design information go to the AI provider you chose; the phone view shows a drawing to a device on your local network. A privacy page listing everything that can leave your computer will be published on pinvane.com.
+Not during ordinary drawing, editing and exporting. If you use the AI features, your request and design information go to the AI provider you chose; the phone view shows a drawing to a device on your local network. [Privacy](https://pinvane.com/privacy/) lists everything that can leave your computer.
 
 **Which files can I export?**
 Drawings as PDF, SVG, PNG and DXF; work tables as HTML, CSV, Excel and PDF.
 
 **Does it work without internet?**
-Drawing and exporting work offline. The automatic licence check runs at most once a day; within the licence period you can work up to 30 days offline, and after the subscription end or the check deadline there are 7 days of grace. AI services need a connection.
+Drawing and exporting work offline. The automatic license check runs at most once a day; within the pass period you can work up to 30 days offline, and after the pass ends or the check deadline there are 7 days to wrap up. AI services need a connection.
 
-**What happens when my subscription ends?**
-You can still open, view and export your drawings (exports may carry a mark). Subscribe again to edit and use AI, or move to the free plan to edit within its limits, without AI.
+**Is Pinvane a subscription?**
+No. Pro is a 30-day or 1-year pass paid once: nothing renews by itself, nothing is charged again when it ends, and there is nothing to cancel. Buying again adds the new pass to the end of the time you have left. Team passes are per seat. The free plan has no time limit and no AI features. You can try every feature free for 14 days, no card needed. Passes can be bought once sales open — plans: https://pinvane.com/pricing/.
+
+**What happens when my pass ends?**
+The app tells you 7 days and 1 day before a pass ends. For 7 days after it ends every feature still works, so you can finish what you were doing. After that you can still open, view and export your drawings (exports may carry a mark). Buy a pass again to edit and use AI (it is added to the end of any time you have left, and nothing renews by itself), or move to the free plan to edit within its limits, without AI.
 
 **Which paper sizes are supported?**
 A4, A3, A2, A1, A0 and custom sizes, in portrait or landscape, with an editable title block.
 
-Plans and prices (planned, before sale): https://pinvane.com/pricing/.
-
 ## Contact
 
 - **Public questions and problem reports:** [Issues](https://github.com/pinvane-app/pinvane/issues/new/choose) — please never attach drawings there.
-- **Private matters:** support@pinvane.com — answers in Korean or English, aiming for two business days (Korean time). Replies are written by Pinvane's support AI and say so; write "person" if you want a person to look. A reply may come from a different address than support@pinvane.com.
+- **Private matters** (license, payment): support@pinvane.com — answers in Korean or English, aiming for two business days (Korean time). Replies are written by Pinvane's support AI and say so; write "person" if you want a person to look. A reply may come from a different address than support@pinvane.com.
 - **Security problems:** report privately — see [SECURITY.md](https://github.com/pinvane-app/.github/blob/main/SECURITY.md).

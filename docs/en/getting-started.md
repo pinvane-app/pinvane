@@ -2,22 +2,44 @@
 
 [한국어](../ko/getting-started.md) · [Guide home](../../README.md)
 
-> Pinvane is in pre-release testing. Installation steps will be completed with the first release.
+> Pinvane 1.0.0 is out. Try every feature free for 14 days, no card needed.
 
 ## What you need
 
-- **Windows (64-bit).** Supported versions will be listed at release.
-- **Google Chrome or Microsoft Edge** installed — Pinvane's window uses one of them with its own separate profile.
-- **No internet for drawing.** Drawing and exporting work offline. The automatic licence check runs at most once a day; activating and releasing devices also make a request.
-- **For AI (optional):** an AI app that supports local MCP servers, or your own API key for the built-in AI window.
+- **Windows 10 or Windows 11, 64-bit.**
+- **Microsoft Edge (part of Windows) or Google Chrome** — Pinvane's window uses one of them with its own separate profile.
+- **No internet for drawing.** Drawing and exporting work offline. The automatic license check runs at most once a day; activating and releasing devices also make a request.
+- **For AI (optional):** an AI app that supports local MCP servers, or your own API key for the built-in AI window. AI connection is in Pro and in the trial ([plans](https://pinvane.com/pricing/)).
 
 ## Install
 
-*At release.* Download the installer only from https://pinvane.com/download/ or this repository's [Releases](https://github.com/pinvane-app/pinvane/releases) page, and compare its SHA-256 with the published value before running it:
+Pinvane installs for your Windows user only and needs no administrator rights.
+
+**1. Download** the installer only from https://pinvane.com/download/ or this repository's [Releases](https://github.com/pinvane-app/pinvane/releases/tag/v1.0.0) page.
+
+| | |
+|---|---|
+| File | `Pinvane-1.0.0-setup.exe` |
+| Version | 1.0.0 |
+| Size | 58.5 MB (61,298,103 bytes) |
+| SHA-256 | `f06f4d6b49ad9fa63568328b5c3066f3e5a6a537f0f7ee76e6e308011ec8adfb` |
+| Code signature | Not yet — see step 3 |
+
+**2. Check the file before you run it.** Open PowerShell in your Downloads folder and run:
 
 ```powershell
-Get-FileHash .\<installer file>
+(Get-FileHash .\Pinvane-1.0.0-setup.exe -Algorithm SHA256).Hash
 ```
+
+The result must be the same 64 characters as the SHA-256 above (upper or lower case does not matter). If it differs, do not run the file — delete it and tell us at support@pinvane.com.
+
+**3. If Windows says "Windows protected your PC".** The installer is not code-signed yet, so Windows Defender SmartScreen may stop it and show "Unknown publisher". Once the SHA-256 matches:
+
+1. Click **More info**.
+2. Check that the app name is the file you downloaded (`Pinvane-1.0.0-setup.exe`).
+3. Click **Run anyway**.
+
+Your browser may also warn that the file is not commonly downloaded. Keep it only after the checksum matches.
 
 ## Open Pinvane
 
@@ -46,6 +68,13 @@ The editor has everything for drawing by hand:
 - **Checks** — design checks while you work, auto-tidy, undo and history. Changes made by an AI are recorded with who made them.
 
 A wire you draw by hand starts with **no colour or gauge**: an empty value is a real value in Pinvane, not a default. Reusing your last values is a switch you turn on.
+
+## Uninstall
+
+- Windows 11: **Settings › Apps › Installed apps**, then **⋯** next to Pinvane › **Uninstall**.
+- Windows 10: **Settings › Apps › Apps & features** › Pinvane › **Uninstall**.
+
+The uninstaller removes only the files it installed. Your drawings stay where you saved them, and your license and preferences stay in `%APPDATA%\Pinvane` — delete that folder yourself if you want them gone.
 
 ## Next
 

@@ -2,22 +2,44 @@
 
 [English](../en/getting-started.md) · [사용 방법 처음](../../README.ko.md)
 
-> Pinvane은 출시 전 시험 중입니다. 설치 순서는 첫 출시 때 채웁니다.
+> Pinvane 1.0.0이 나왔습니다. 14일 동안 모든 기능을 무료로 써 볼 수 있습니다 — 카드 없이.
 
 ## 필요한 것
 
-- **Windows(64비트).** 지원 판은 출시 때 적습니다.
-- **Google Chrome 또는 Microsoft Edge** — Pinvane 창이 둘 중 하나를 따로 떨어진 자기 프로필로 씁니다.
+- **Windows 10 또는 Windows 11, 64비트.**
+- **Microsoft Edge(Windows에 들어 있음) 또는 Google Chrome** — Pinvane 창이 둘 중 하나를 따로 떨어진 자기 프로필로 씁니다.
 - **그리기에는 인터넷이 필요 없습니다.** 그리기와 내보내기는 인터넷 없이 됩니다. 자동 사용권 확인은 하루 한 번 이하이고, 기기 활성화 · 해제 때도 요청이 있습니다.
-- **AI를 쓰려면(고르는 것):** 로컬 MCP를 지원하는 AI 앱, 또는 내장 AI 창에 넣을 내 API 키.
+- **AI를 쓰려면(고르는 것):** 로컬 MCP를 지원하는 AI 앱, 또는 내장 AI 창에 넣을 내 API 키. AI 연결은 Pro와 체험 기간에 됩니다([요금](https://pinvane.com/ko/pricing/)).
 
 ## 설치
 
-*출시 때.* 설치 파일은 https://pinvane.com/ko/download/ 나 이 저장소의 [Releases](https://github.com/pinvane-app/pinvane/releases)에서만 내려받고, 실행하기 전에 SHA-256을 게시된 값과 맞춰 보세요.
+Pinvane은 지금 로그인한 Windows 사용자에게만 설치되며 관리자 권한이 필요 없습니다.
+
+**1. 내려받기** — 설치 파일은 https://pinvane.com/ko/download/ 나 이 저장소의 [Releases](https://github.com/pinvane-app/pinvane/releases/tag/v1.0.0)에서만 내려받으세요.
+
+| | |
+|---|---|
+| 파일 | `Pinvane-1.0.0-setup.exe` |
+| 판 | 1.0.0 |
+| 크기 | 58.5 MB(61,298,103 바이트) |
+| SHA-256 | `f06f4d6b49ad9fa63568328b5c3066f3e5a6a537f0f7ee76e6e308011ec8adfb` |
+| 코드 서명 | 아직 없음 — 3단계 참고 |
+
+**2. 실행하기 전에 파일 확인** — 내려받기 폴더에서 PowerShell을 열고 아래 한 줄을 실행합니다.
 
 ```powershell
-Get-FileHash .\<설치 파일>
+(Get-FileHash .\Pinvane-1.0.0-setup.exe -Algorithm SHA256).Hash
 ```
+
+나온 값이 위 SHA-256과 같은 64글자여야 합니다(대소문자는 상관없음). 다르면 실행하지 말고 파일을 지운 뒤 support@pinvane.com 으로 알려 주세요.
+
+**3. 「Windows의 PC 보호」가 뜨면** — 설치 파일에 아직 코드 서명이 없어서 Windows Defender SmartScreen이 실행을 막고 「알 수 없는 게시자」로 보일 수 있습니다. SHA-256이 맞은 뒤에:
+
+1. **추가 정보**를 누릅니다.
+2. 앱 이름이 내려받은 파일(`Pinvane-1.0.0-setup.exe`)인지 확인합니다.
+3. **실행**을 누릅니다.
+
+브라우저도 「자주 내려받는 파일이 아니다」라고 경고할 수 있습니다. 확인값이 맞은 뒤에만 파일을 남겨 두세요.
 
 ## Pinvane 열기
 
@@ -46,6 +68,13 @@ Get-FileHash .\<설치 파일>
 - **검사** — 그리는 동안 설계 검사, 자동 정리, 되돌리기와 기록. AI가 고친 것은 누가 고쳤는지 함께 기록됩니다.
 
 손으로 그린 새 선은 **색 · 굵기가 비어 있는 채로** 시작합니다. Pinvane에서 빈 값은 기본값이 아니라 정식 값입니다. 마지막 값 이어 쓰기는 사람이 켜는 선택입니다.
+
+## 제거
+
+- Windows 11: **설정 › 앱 › 설치된 앱**에서 Pinvane 옆 **⋯** › **제거**.
+- Windows 10: **설정 › 앱 › 앱 및 기능** › Pinvane › **제거**.
+
+제거 프로그램은 설치한 파일만 지웁니다. 도면은 저장한 자리에 그대로 있고, 사용권과 설정은 `%APPDATA%\Pinvane`에 남습니다 — 지우려면 그 폴더를 직접 지우세요.
 
 ## 다음
 

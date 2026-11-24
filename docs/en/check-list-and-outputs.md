@@ -42,4 +42,4 @@ From one design, a draft diagram and work tables:
 - The export runs the drawing and design checks and records the results with the files.
 - Wire colours are also shown as line patterns.
 
-**Drafts until people confirm them.** Undecided production information — lengths, contacts, the real terminals — is confirmed and entered by you and your designer. A worker cannot yet work from the tables alone (2026-10-20).
+**Drafts until people confirm them.** Undecided production information — lengths, contacts, the real terminals — is confirmed and entered by you and your designer. No worker has wired a real machine from Pinvane's tables yet, and our six test designs are fictional ([test results and limits](https://pinvane.com/evidence/#e3)).

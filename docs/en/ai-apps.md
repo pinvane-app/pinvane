@@ -4,7 +4,7 @@
 
 Pinvane is made for AI to use. An AI can draw, change, check and export through Pinvane's **local MCP server** (the standard way AI apps call tools) or the **command line**, and gets structured answers back.
 
-Feature map (2026-10-20): 95 screen features classified — 80 supported for AI, 1 partly, 14 not applicable. "Partly" is adding an SVG picture to a part (an AI can add PNG, JPEG or WebP). "Not applicable" are screen conveniences an AI does not need, such as mouse selection, grid snapping or the light/dark switch.
+The MCP server carries a usage guide for your AI and ready-made prompts: draw from a parts list, work through the check list, export the work tables. AI connection is in Pro and in the 14-day trial ([plans](https://pinvane.com/pricing/)). One known limit: adding an SVG picture to a part works on screen only; an AI can add PNG, JPEG or WebP pictures.
 
 ## The local MCP server
 
@@ -25,7 +25,7 @@ Design and drawing changes are **change sets**: checked before they apply and un
 
 ## Add Pinvane to your AI app
 
-*Step-by-step guides for common AI apps will be added at release.* In general:
+The exact steps depend on your AI app; this guide does not have app-by-app steps yet. In general:
 
 1. Install Pinvane and open it once.
 2. In your AI app's MCP settings, add a **local (stdio) server** whose command runs `pinvane mcp`. To let it work on a project outside the default Pinvane folder, first allow that folder yourself with `pinvane mcp-allow`.
