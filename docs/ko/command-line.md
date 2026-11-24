@@ -48,7 +48,7 @@ pinvane import-table <프로젝트> [--parts parts.csv] --wires wires.csv [--map
 | `new <폴더>` | 도면 한 장짜리 빈 프로젝트(`--name` · `--company` · `--paper A4…A0` · `--orientation`) |
 | `import-table <프로젝트>` | 부품 목록 + 결선표(CSV) → 변경 묶음 하나 + 배치된 도면 |
 | `check <프로젝트>` | 저장된 도면 그대로 도면 검사 · 설계 검사 |
-| `export <프로젝트>` | 도면 PDF · SVG · PNG(일반 출력, 기본) 또는 DXF 까지(`--style drawing`, CAD 용)와 작업표(HTML · CSV · 엑셀 · PDF) |
+| `export <프로젝트>` | 도면 PDF · SVG · PNG(일반 출력, 기본) 또는 DXF 까지(`--style drawing`, CAD 용)와 작업표(HTML · CSV · 엑셀 · PDF). `--book` 은 여러 도면을 PDF 한 개 · 보기 HTML 한 개로(전체 장이 먼저) |
 | `title <프로젝트> 칸=값 …` | 표제란 칸(예 `drawing_no=…` · `lang=en`) |
 | `paper <프로젝트>` | 용지 크기 · 방향 · 맞추기 · 도면 틀 · 출력 모양(`--style`) |
 | `edit <프로젝트>` · `open <프로젝트>` | 편집기 · 읽기 전용 보기(`127.0.0.1`) |

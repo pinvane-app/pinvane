@@ -13,7 +13,7 @@
 
 That is the goal. Today Pinvane makes a **draft** diagram and work tables, links what is still undecided to a check list, and lets people fix everything by hand. Lengths, contacts and terminals still need people: no worker has wired a real machine from Pinvane's tables yet, and our six test designs are fictional ([known limits](CHANGELOG.md#known-limits-and-issues), [test results](https://pinvane.com/evidence/)).
 
-> **Pinvane 1.0.1 is out** for Windows 10 and 11, 64-bit. Download `Pinvane-1.0.1-setup.exe` from https://pinvane.com/download/ or this repository's [Releases](https://github.com/pinvane-app/pinvane/releases/tag/v1.0.1) page, and check its SHA-256 before you run it — see [Getting started → Install](docs/en/getting-started.md#install). Try every feature free for 14 days, no card needed. Plans: https://pinvane.com/pricing/ (passes can be bought once sales open).
+> **Pinvane 1.0.2 is out** for Windows 10 and 11, 64-bit. Download `Pinvane-1.0.2-setup.exe` from https://pinvane.com/download/ or this repository's [Releases](https://github.com/pinvane-app/pinvane/releases/tag/v1.0.2) page, and check its SHA-256 before you run it — see [Getting started → Install](docs/en/getting-started.md#install). Try every feature free for 14 days, no card needed. Plans: https://pinvane.com/pricing/ (passes can be bought once sales open).
 
 ![The Pinvane editor with a fictional demo cart: parts, wires and the check list](docs/images/editor_en_light.webp)
 

@@ -2,7 +2,7 @@
 
 [한국어](../ko/getting-started.md) · [Guide home](../../README.md)
 
-> Pinvane 1.0.1 is out. Try every feature free for 14 days, no card needed.
+> Pinvane 1.0.2 is out. Try every feature free for 14 days, no card needed.
 
 ## What you need
 
@@ -15,20 +15,20 @@
 
 Pinvane installs for your Windows user only and needs no administrator rights.
 
-**1. Download** the installer only from https://pinvane.com/download/ or this repository's [Releases](https://github.com/pinvane-app/pinvane/releases/tag/v1.0.1) page.
+**1. Download** the installer only from https://pinvane.com/download/ or this repository's [Releases](https://github.com/pinvane-app/pinvane/releases/tag/v1.0.2) page.
 
 | | |
 |---|---|
-| File | `Pinvane-1.0.1-setup.exe` |
-| Version | 1.0.1 |
-| Size | 58.5 MB (61,322,674 bytes) |
-| SHA-256 | `6221ea3150efa35a33be81d6b5486680321f674859b0125daaf3ef750a07a38b` |
+| File | `Pinvane-1.0.2-setup.exe` |
+| Version | 1.0.2 |
+| Size | 58.5 MB (61,334,066 bytes) |
+| SHA-256 | `6c11a0ef97e4dde958f36cd3a4fe85e47cdfdf16e4ce9b2ca3e79fec644747e3` |
 | Code signature | Not yet — see step 3 |
 
 **2. Check the file before you run it.** Open PowerShell in your Downloads folder and run:
 
 ```powershell
-(Get-FileHash .\Pinvane-1.0.1-setup.exe -Algorithm SHA256).Hash
+(Get-FileHash .\Pinvane-1.0.2-setup.exe -Algorithm SHA256).Hash
 ```
 
 The result must be the same 64 characters as the SHA-256 above (upper or lower case does not matter). If it differs, do not run the file — delete it and tell us at support@pinvane.com.
@@ -36,7 +36,7 @@ The result must be the same 64 characters as the SHA-256 above (upper or lower c
 **3. If Windows says "Windows protected your PC".** The installer is not code-signed yet, so Windows Defender SmartScreen may stop it and show "Unknown publisher". Once the SHA-256 matches:
 
 1. Click **More info**.
-2. Check that the app name is the file you downloaded (`Pinvane-1.0.1-setup.exe`).
+2. Check that the app name is the file you downloaded (`Pinvane-1.0.2-setup.exe`).
 3. Click **Run anyway**.
 
 Your browser may also warn that the file is not commonly downloaded. Keep it only after the checksum matches.

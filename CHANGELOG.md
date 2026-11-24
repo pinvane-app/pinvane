@@ -2,7 +2,22 @@
 
 [한국어](CHANGELOG.ko.md) · Also on https://pinvane.com/changelog/
 
-Changes, newest first. The newest version is 1.0.1.
+Changes, newest first. The newest version is 1.0.2.
+
+## 1.0.2 — clearer sheets and drawing books · 2026-11-25
+
+Download from https://pinvane.com/download/ or [Releases](https://github.com/pinvane-app/pinvane/releases/tag/v1.0.2): `Pinvane-1.0.2-setup.exe`, 61,334,066 bytes, SHA-256 `6c11a0ef97e4dde958f36cd3a4fe85e47cdfdf16e4ce9b2ca3e79fec644747e3`. Installer built 2026-11-25. Check the SHA-256 before you run it — see [Getting started → Install](docs/en/getting-started.md#install).
+
+**Clearer sheets**
+- Zones (boxes, chassis, plates) are now a light tint with a thin solid outline, so they no longer look like dashed CAN or signal wires. In DXF the outline is one continuous line.
+- Every sheet has its own legend in the info column, with only the wire colors, line styles, gauges and chips used on that sheet. The separate legend page at the end is gone.
+- A part with a photo now shows the photo inside its box, together with the part name and every terminal name.
+
+**One book for several drawings**
+- `pinvane export --book` puts several drawings into one print PDF and one viewer page: first the overview sheet with all the wiring, then the sheets by function or area. Sheet numbers count across the whole book. Save the order with `pinvane paper --book`; the export window and the MCP `export_outputs` tool then use it.
+
+**Fixes**
+- In the viewer, "Hide unrelated" now also hides zones, drawing notes and cable bundle marks that have nothing to do with the part or wire you clicked, and keeps a part's picture with the part. "Print this circuit" matches.
 
 ## 1.0.1 — print-ready output · 2026-11-24
 

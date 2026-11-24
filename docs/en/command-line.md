@@ -48,7 +48,7 @@ pinvane import-table <project> [--parts parts.csv] --wires wires.csv [--map colu
 | `new <folder>` | Empty project with one drawing (`--name`, `--company`, `--paper A4…A0`, `--orientation`) |
 | `import-table <project>` | Parts list + connection table (CSV) → one change set + laid-out diagram |
 | `check <project>` | Drawing checks and design checks on the saved drawing |
-| `export <project>` | Drawing as PDF · SVG · PNG (print, the default) or also DXF (`--style drawing`, for CAD), and the work tables (HTML · CSV · Excel · PDF) |
+| `export <project>` | Drawing as PDF · SVG · PNG (print, the default) or also DXF (`--style drawing`, for CAD), and the work tables (HTML · CSV · Excel · PDF); `--book` puts several drawings into one PDF and one viewer page, overview first |
 | `title <project> field=value …` | Title-block fields (for example `drawing_no=…`, `lang=en`) |
 | `paper <project>` | Paper size, orientation, fit, drawing frame and output style (`--style`) |
 | `edit <project>` · `open <project>` | The editor · a read-only viewer, on `127.0.0.1` |
