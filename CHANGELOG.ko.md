@@ -2,7 +2,21 @@
 
 [English](CHANGELOG.md) · 홈페이지: https://pinvane.com/ko/changelog/
 
-새것부터 적습니다. 가장 새 판은 1.0.0입니다.
+새것부터 적습니다. 가장 새 판은 1.0.1입니다.
+
+## 1.0.1 — 인쇄하기 좋은 출력 · 2026-11-24
+
+https://pinvane.com/ko/download/ 또는 [Releases](https://github.com/pinvane-app/pinvane/releases/tag/v1.0.1)에서 내려받기: `Pinvane-1.0.1-setup.exe`, 61,322,674 바이트, SHA-256 `6221ea3150efa35a33be81d6b5486680321f674859b0125daaf3ef750a07a38b`. 설치 파일을 만든 날 2026-11-24. 실행하기 전에 SHA-256을 확인하세요 — [시작하기 → 설치](docs/ko/getting-started.md#설치).
+
+**기본은 인쇄하기 좋은 배선도**
+- 내보내기 기본이 크고 읽기 쉬운 배선도로 바뀌었습니다. 용지 크기와 방향은 Pinvane이 고르고, 배선을 키워 종이를 채웁니다. 굵은 테두리와 정보 칸(제목 · 판 · 날짜 · 범례)이 들어갑니다.
+- AutoCAD 등 CAD에서 고칠 때는 도면 형식을 고릅니다(내보내기 창의 「출력 모양」, `pinvane export --style drawing`, MCP `export_outputs` 의 `style="drawing"`). 1.0.0과 같은 출력입니다(ISO 틀 · 표제란 · 1:1 · DXF). DXF는 도면 형식에서만 나옵니다.
+
+**AI를 위해**
+- AI가 읽는 안내를 고쳤습니다. 배선도를 처음 그리는 사람을 돕도록 쉬운 말로 한 번에 하나씩 묻고, 값을 지어내지 않습니다. CAD에서 고칠 게 아니면 인쇄용으로 내보냅니다.
+
+**고침**
+- 버스 속도를 숫자로 적으면 내보내기가 멈추던 문제를 고쳤습니다. 「250 kbps」 · 「1 Mbps」로 찍습니다.
 
 ## 1.0.0 — 첫 출시 · 2026-11-22
 

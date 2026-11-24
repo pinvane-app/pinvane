@@ -2,7 +2,21 @@
 
 [한국어](CHANGELOG.ko.md) · Also on https://pinvane.com/changelog/
 
-Changes, newest first. The newest version is 1.0.0.
+Changes, newest first. The newest version is 1.0.1.
+
+## 1.0.1 — print-ready output · 2026-11-24
+
+Download from https://pinvane.com/download/ or [Releases](https://github.com/pinvane-app/pinvane/releases/tag/v1.0.1): `Pinvane-1.0.1-setup.exe`, 61,322,674 bytes, SHA-256 `6221ea3150efa35a33be81d6b5486680321f674859b0125daaf3ef750a07a38b`. Installer built 2026-11-24. Check the SHA-256 before you run it — see [Getting started → Install](docs/en/getting-started.md#install).
+
+**Print-ready by default**
+- Exports are now big, easy-to-read wiring diagrams. Pinvane picks the paper size and orientation and scales the wiring up to fill the page, with a thick border and an info column for the title, edition, date and legend.
+- To edit a sheet in AutoCAD or another CAD program, choose the drawing format (the export window's "Output style", `pinvane export --style drawing`, or MCP `export_outputs` with `style="drawing"`): the 1.0.0 output with an ISO frame, a title block, 1:1 scale and DXF. DXF comes only in the drawing format.
+
+**For AI**
+- The guide your AI reads now asks it to help people who have never drawn a wiring diagram: plain words, one question at a time, no made-up values, and print-ready output unless you want to edit in CAD.
+
+**Fixes**
+- Export no longer stops when a bus speed is written as a number; it now reads "250 kbps" or "1 Mbps".
 
 ## 1.0.0 — first release · 2026-11-22
 

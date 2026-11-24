@@ -37,7 +37,7 @@ Yes. The editor has everything for drawing by hand: parts, wires, bundles, text,
 Not during ordinary drawing, editing and exporting. If you use the AI features, your request and design information go to the AI provider you chose; the phone view shows a drawing to a device on your local network. [Privacy](https://pinvane.com/privacy/) lists everything that can leave your computer.
 
 **Which files can I export?**
-Drawings as PDF, SVG, PNG and DXF; work tables as HTML, CSV, Excel and PDF.
+Drawings as PDF, SVG and PNG, plus DXF in the drawing format; work tables as HTML, CSV, Excel and PDF.
 
 **Does it work without internet?**
 Drawing and exporting work offline. The automatic license check runs at most once a day; within the pass period you can work up to 30 days offline, and after the pass ends or the check deadline there are 7 days to wrap up. AI services need a connection.
@@ -49,7 +49,7 @@ No. Pro is a 30-day or 1-year pass paid once: nothing renews by itself, nothing 
 The app tells you 7 days and 1 day before a pass ends. For 7 days after it ends every feature still works, so you can finish what you were doing. After that you can still open, view and export your drawings (exports may carry a mark). Buy a pass again to edit and use AI (it is added to the end of any time you have left, and nothing renews by itself), or move to the free plan to edit within its limits, without AI.
 
 **Which paper sizes are supported?**
-A4, A3, A2, A1, A0 and custom sizes, in portrait or landscape, with an editable title block.
+Auto is the default: Pinvane picks the smallest sheet the whole drawing fits on and fills it. You can also choose A4, A3, A2, A1, A0 or a custom size. Portrait or landscape is picked to show the wiring largest, or you choose. The drawing format adds an editable title block.
 
 ## Contact
 

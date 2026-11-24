@@ -32,7 +32,7 @@ From one design, a draft diagram and work tables:
 
 | Output | Formats | For |
 |---|---|---|
-| Wiring diagram | PDF · SVG · PNG · DXF | Print (A4–A0, custom), CAD, sharing. Drawing frame with an editable title block |
+| Wiring diagram | PDF · SVG · PNG · DXF | Print and sharing: paper picked automatically (or A4–A0, custom), the wiring fills the page, thick border, info column. For CAD, the drawing format: ISO frame, editable title block, DXF |
 | Pin table · cut list | HTML · CSV · Excel · PDF | Cutting and crimping; rows show their evidence state and related check numbers |
 | Label list | HTML · CSV · Excel · PDF | Label text, count, gauge, colour and where each label goes |
 | Work order · pre-plug check · test sheet | HTML · CSV · Excel · PDF | The order of work, what to check before plugging in, how each test passes (test rows also show check numbers) |

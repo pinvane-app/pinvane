@@ -13,7 +13,7 @@
 
 이것이 목표입니다. 지금 Pinvane은 부품 목록과 결선표를 도면과 작업표 **초안**으로 옮기고, 미정 · 추정 정보를 확인 목록과 연결하며, 모든 것을 사람이 화면에서 고칠 수 있게 합니다. 길이 · 접점 · 단자는 여전히 사람이 정해야 합니다: 작업자가 Pinvane의 표로 실제 장비를 배선해 본 시험은 아직 없고, 시험 설계 여섯은 가상입니다([알려진 한계](CHANGELOG.ko.md#알려진-한계와-문제) · [시험 결과](https://pinvane.com/ko/evidence/)).
 
-> **Pinvane 1.0.0 출시** — Windows 10 · 11, 64비트. https://pinvane.com/ko/download/ 나 이 저장소의 [Releases](https://github.com/pinvane-app/pinvane/releases/tag/v1.0.0)에서 `Pinvane-1.0.0-setup.exe`를 내려받고, 실행하기 전에 SHA-256을 확인하세요 — [시작하기 → 설치](docs/ko/getting-started.md#설치). 14일 동안 모든 기능을 무료로 써 볼 수 있습니다 — 카드 없이. 요금: https://pinvane.com/ko/pricing/ (이용권은 판매가 열리면 살 수 있습니다).
+> **Pinvane 1.0.1 출시** — Windows 10 · 11, 64비트. https://pinvane.com/ko/download/ 나 이 저장소의 [Releases](https://github.com/pinvane-app/pinvane/releases/tag/v1.0.1)에서 `Pinvane-1.0.1-setup.exe`를 내려받고, 실행하기 전에 SHA-256을 확인하세요 — [시작하기 → 설치](docs/ko/getting-started.md#설치). 14일 동안 모든 기능을 무료로 써 볼 수 있습니다 — 카드 없이. 요금: https://pinvane.com/ko/pricing/ (이용권은 판매가 열리면 살 수 있습니다).
 
 ![가상 데모 수레를 그린 Pinvane 편집기 — 부품 · 선 · 확인 목록](docs/images/editor_ko_light.webp)
 
