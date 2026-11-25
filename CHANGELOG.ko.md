@@ -2,7 +2,23 @@
 
 [English](CHANGELOG.md) · 홈페이지: https://pinvane.com/ko/changelog/
 
-새것부터 적습니다. 가장 새 판은 1.0.2입니다.
+새것부터 적습니다. 가장 새 판은 1.0.3입니다.
+
+## 1.0.3 — 배선하는 사람을 위해 · 2026-11-25
+
+https://pinvane.com/ko/download/ 또는 [Releases](https://github.com/pinvane-app/pinvane/releases/tag/v1.0.3)에서 내려받기: `Pinvane-1.0.3-setup.exe`, 61,354,118 바이트, SHA-256 `4737121da754f1d63fc1461d02511e9fc25ba806f03971bd8cff5a76db1bec66`. 설치 파일을 만든 날 2026-11-25. 실행하기 전에 SHA-256을 확인하세요 — [시작하기 → 설치](docs/ko/getting-started.md#설치).
+
+**배선하는 사람을 위해**
+- 새 작업자 묶음: `pinvane export --for worker`(기본 A3, `--paper` 로 고름. MCP `export_outputs` 의 `worker=true`). 첫 쪽은 개요, 그다음은 선 라벨 · 단자 이름이 8 pt 이상인 작업 장이고, 보기 HTML과 작업표가 함께 나옵니다. 작업자 · 제작용 내보내기에서 8 pt보다 작은 글자는 출력 검사에서 실패입니다. 전에 `--for worker` 가 고르던 작업자용 배선도는 이제 `--drawing worker` 입니다.
+- 굵기에 늘 단위가 붙습니다(6 mm², 20 AWG). 선 색이 회로 종류를 뜻하는 도면에서는 라벨에 피복 색도 적고, 범례는 설계 자료에서 만듭니다.
+- 쪽 번호는 묶음 전체에 하나입니다. 장 넘김 표시가 선이 가는 곳을 알려 줍니다 — 쪽 · 선 번호 · 부품 · 단자(→ 7/12 · E06 …).
+
+**보기 HTML**
+- 탭에 쪽 번호와 장 제목, 머리에 설계 이름과 판이 보이고, 첫 화면은 장 목록입니다.
+- 선을 누르면 작업 카드가 나옵니다 — 양끝, 피복 색, 굵기, 자를 길이, 끝 처리, 「끝 A 꽂음 · 끝 B 꽂음 · 시험함」 체크(이 브라우저에 저장).
+
+**AI를 위해**
+- 설계 이름을 고칠 수 있습니다: `design.set` 이 `project` 를 받습니다(MCP `set_design_facts title=…`).
 
 ## 1.0.2 — 더 읽기 쉬운 장 · 도면 묶음 · 2026-11-25
 

@@ -2,7 +2,23 @@
 
 [한국어](CHANGELOG.ko.md) · Also on https://pinvane.com/changelog/
 
-Changes, newest first. The newest version is 1.0.2.
+Changes, newest first. The newest version is 1.0.3.
+
+## 1.0.3 — for the person doing the wiring · 2026-11-25
+
+Download from https://pinvane.com/download/ or [Releases](https://github.com/pinvane-app/pinvane/releases/tag/v1.0.3): `Pinvane-1.0.3-setup.exe`, 61,354,118 bytes, SHA-256 `4737121da754f1d63fc1461d02511e9fc25ba806f03971bd8cff5a76db1bec66`. Installer built 2026-11-25. Check the SHA-256 before you run it — see [Getting started → Install](docs/en/getting-started.md#install).
+
+**For the person doing the wiring**
+- New worker bundle: `pinvane export --for worker` (A3 by default, `--paper` to choose; MCP `export_outputs` with `worker=true`). An overview page comes first, then work sheets where wire labels and terminal names are at least 8 pt, with the viewer and the work tables. The print check fails a worker or production export with text below 8 pt. The older worker drawing that `--for worker` used to pick is now `--drawing worker`.
+- Every gauge carries its unit (6 mm², 20 AWG). When line colors show circuit types, the label also names the insulation color, and the legend is built from the design data.
+- One page numbering across the whole book. Off-sheet flags say where the wire goes: page, wire number, part and terminal (→ 7/12 · E06 …).
+
+**Viewer**
+- Tabs show the page number and sheet title, the header shows the design name and revision, and the first screen is the sheet list.
+- Tap a wire for its work card: both ends, insulation color, gauge, cut length, end treatment and three check boxes (end A plugged, end B plugged, tested), saved in this browser.
+
+**For AI**
+- The design name can be changed: `design.set` takes `project` (MCP `set_design_facts title=…`).
 
 ## 1.0.2 — clearer sheets and drawing books · 2026-11-25
 
